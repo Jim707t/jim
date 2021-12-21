@@ -162,7 +162,7 @@ footer {
   width: 40%;
   top: 10px;
 }
-@media(max-width: 768px)
+@media(max-width: 1080px)
 {
     .row{
         width: 100%;
