@@ -37,7 +37,7 @@ body{
   text-align: center;
   font-size: 60px;
   padding: 20px;
-  width: 200px;
+  width: 220px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -85,7 +85,7 @@ ul{
 .box li a{
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 40px;
+  font-size: 60px;
   transition: all ease-in-out 250ms;
 }
 .box li a:hover{
@@ -156,7 +156,7 @@ footer {
   text-align: center;
   padding: 5px;
   color: white;
-  font-size: 13px;
+  font-size: 8px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -234,7 +234,7 @@ footer {
 }
 @media (max-width: 1090px) {
     .box{
-        width: 80%;
+        width: 100%;
         background: rgba(0, 0, 0, 0.2);
         padding: 40px;
         text-align: center;
@@ -244,4 +244,73 @@ footer {
         font-family: 'Century Gothic',sans-serif;
         height: 400%;
       }
+   .slider_img {
+        height: 800px;
+      }
+      .profile-card
+    {
+        width: 490px;
+        height: 450px;
+    }
+  .text
+{
+    color:#000000fa;
+    font-size: 60px;
+    margin-top: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+ 
+}
+  .jd {
+  font-sise: 60px;
+  }
+.profile-content
+{
+    padding:15px;
+}
+.img1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.profile-image
+{
+    text-align: center;
+}
+.desc
+{
+    text-align: center;
+}
+.desc h2
+{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.desc p{
+    font-size: 13px;
+    line-height: 1.3em;
+    margin-top: -10px;
+    color: #fffafa;
+     
+}
+.btn-div
+{
+    text-align: center;
+}
+.btn
+{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    width: 150px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    outline:none;
+    border:none;
+    text-transform: uppercase;
+}
 }
