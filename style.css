@@ -165,7 +165,7 @@ footer {
 @media(max-width: 1080px)
 {
     .row{
-        width: 100%;
+        width: 400%;
     }
 }
 .profile-card
@@ -233,7 +233,7 @@ footer {
 }
 @media (max-width: 1090px) {
     .box{
-        width: 400px;
+        width: 100%;
         background: rgba(0, 0, 0, 0.2);
         padding: 40px;
         text-align: center;
@@ -241,5 +241,6 @@ footer {
         margin-top: 0;
         color: white;
         font-family: 'Century Gothic',sans-serif;
+        height: 100%;
       }
 }
