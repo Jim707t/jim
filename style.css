@@ -233,7 +233,8 @@ footer {
 }
 @media (max-width: 1080px) {
     .box{
-        width: 400px;
+        width: 100%;
+        height: 400%;
         background: rgba(0, 0, 0, 0.2);
         padding: 40px;
         text-align: center;
@@ -241,5 +242,115 @@ footer {
         margin-top: 0;
         color: white;
         font-family: 'Century Gothic',sans-serif;
+      }
+     .box-img{
+        border-radius: 50%;
+        width: 400px;
+        height: 400px;
+      }
+     .box h1{
+        font-size: 80px;
+        letter-spacing: 4px;
+        font-weight: 100;
+      }
+     .box h5{
+        font-size: 60px;
+        letter-spacing: 3px;
+        font-weight: 100;
+      }
+     .button{
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 60px;
+        padding: 20px;
+        width: 250px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        letter-spacing: 3px;
+        font-weight: 100;
+       }
+     .box p{
+        text-align: justify;
+        font-size: 40px;
+       }
+    
+     .slider_img {
+        height: 600px;
+       }
+     .slider_img img {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 600px;
+       height: 450px;
+       }
+     .box li{
+       display: inline-block;
+       margin: 6px;
+       list-style: none;
+       }
+     .box li a{
+       font-size: 65px;
+       }
+      
+     footer {
+       text-align: center;
+       font-size: 23px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 40%;
+       top: 15px;
+       }
+      
+     .jd a {
+       color: #000;
+       font-size: 80px;
+      }
+     
+     .text{
+       font-size: 80px;
+       margin-top: 40px;
+       font-weight: 600;
+       text-align: center;
+       }
+     .profile-card{
+       width: 470px;
+       height: 450px;
+       margin: 20px 10px 10px 10px;
+       }
+     .img1{
+       width: 100px;
+       height: 100px;
+       border-radius: 50px;
+       }
+     .profile-image{
+       text-align: center;
+       }
+     .desc{
+       text-align: center;
+       }
+     .desc h2{
+       color: rgb(255, 255, 255);
+       font-size: 40px;
+       }
+     .desc p{
+       font-size: 23px;
+       line-height: 1.3em;
+       margin-top: -10px;
+       }
+     .btn-div{
+       text-align: center;
+       }
+     .btn{
+       height: 48px;
+       font-size: 23px;
+       font-weight: 600;
+       box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+       border-radius: 3px;
       }
 }
