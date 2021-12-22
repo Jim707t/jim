@@ -285,7 +285,7 @@ footer {
        display: block;
        margin-left: auto;
        margin-right: auto;
-       width: 700px;
+       width: 800px;
        height: 570px;
        }
      .box li{
@@ -351,7 +351,6 @@ footer {
        }
      .btn-div{
        text-align: center;
-       font-size: 80px;
        }
      .btn{
        height: 48px;
