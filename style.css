@@ -306,7 +306,7 @@ footer {
        width: 40%;
        top: 15px;
        }
-  footer p {
+  footer p a{
        font-size: 15px;
        }
       .fas {
