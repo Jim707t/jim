@@ -357,7 +357,7 @@ footer {
     width: 150px;
     cursor: pointer;
     height: 80px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -366,6 +366,6 @@ footer {
     text-transform: uppercase;
    }
    .fas {
-        font-size: 13px;
+        font-size: 15px;
        }
 }
