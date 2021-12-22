@@ -351,6 +351,8 @@ footer {
        }
      .btn-div{
        text-align: center;
+       height: 28px;
+       width: 48px;
        }
      .btn{
        height: 48px;
