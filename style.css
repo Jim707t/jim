@@ -349,16 +349,22 @@ footer {
        line-height: 1.3em;
        margin-top: -10px;
        }
-     .btn-div{
-       text-align: center;
-       height: 28px;
-       width: 48px;
-       }
+     .btn-div
+{
+      text-align: center;
+}
      .btn{
-       height: 48px;
-       font-size: 23px;
-       font-weight: 600;
-       box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-       border-radius: 3px;
-      }
+      background-color: rgb(0, 0, 0);
+      color: #ffffff;
+      width: 200px;
+      cursor: pointer;
+      height: 28px;
+      font-size: 23px;
+      font-weight: 600;
+      box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+      border-radius: 3px;
+      outline:none;
+      border:none;
+      text-transform: uppercase;
+     }
 }
