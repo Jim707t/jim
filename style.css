@@ -365,4 +365,7 @@ footer {
     border:none;
     text-transform: uppercase;
    }
+   .fas {
+        font-size: 13px;
+       }
 }
