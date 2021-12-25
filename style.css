@@ -294,6 +294,23 @@ footer {
 
 /* Responsive */
 @media all and (max-width: 1080px) {
+    
+    .hero .logo {
+        font-size: 5rem;
+    }
+    
+    .hero .socials ul {
+       list-style: none;
+       font-size: 5rem;
+    }
+    
+
+    .hero .heroG div p {
+       margin-top: 4rem;
+       margin-bottom: 6rem;
+       line-height: 3rem;
+    }
+    
     .hero .heroD {
         display: none;
     }
@@ -304,8 +321,23 @@ footer {
     }
 
     .hero .heroG div h1 {
-        font-size: 2rem;
+        font-size: 6rem;
     }
+    
+    .btn {
+       border: 0;
+       padding: 3rem 5rem;
+       background: var(--color3);
+       cursor: pointer;
+       transition: all .5s;
+     }
+    
+    footer {
+       background: var(--color1);
+       color: var(--color2);
+       padding: 4rem 0;
+       font-size: 3.rem;
+     }
 
     .team__flex {
         flex-direction: column;
