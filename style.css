@@ -293,7 +293,7 @@ footer {
 }
 
 /* Responsive */
-@media all and (max-width: 767px) {
+@media all and (max-width: 1080px) {
     .hero .heroD {
         display: none;
     }
