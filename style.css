@@ -72,11 +72,6 @@ a .btn {
     height: 100%;
 }
 
-.heroD .nft{
-    height: 100%;
-    width: 110%;
-}
-
 .heroD {
     background: var(--color1);
 }
