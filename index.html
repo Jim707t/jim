@@ -40,10 +40,11 @@
             </div>
         </div>
         <div class="heroD">
-            <img class="mySlides" src="img_snowtops.jpg">
-            <img class="mySlides" src="img_lights.jpg">
-            <img class="mySlides" src="img_mountains.jpg">
-            <img class="mySlides" src="img_forest.jpg">
+            <img class="mySlides" src="https://gateway.pinata.cloud/ipfs/QmTPhnaPmB1HdfqGE5Aar5Rh71wgHLWn2prKAGNUdwYqHd/92.png">
+            <img class="mySlides" src="https://gateway.pinata.cloud/ipfs/QmTPhnaPmB1HdfqGE5Aar5Rh71wgHLWn2prKAGNUdwYqHd/96.png">
+            <img class="mySlides" src="https://gateway.pinata.cloud/ipfs/QmTPhnaPmB1HdfqGE5Aar5Rh71wgHLWn2prKAGNUdwYqHd/99.png">
+            <img class="mySlides" src="https://gateway.pinata.cloud/ipfs/QmTPhnaPmB1HdfqGE5Aar5Rh71wgHLWn2prKAGNUdwYqHd/86.png">
+            <img class="mySlides" src="https://gateway.pinata.cloud/ipfs/QmTPhnaPmB1HdfqGE5Aar5Rh71wgHLWn2prKAGNUdwYqHd/643.png">
         </div>
     </section>
     <section class="discord">
@@ -100,6 +101,20 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
         AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
