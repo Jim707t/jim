@@ -71,13 +71,7 @@ a .btn {
     width: 50%;
     height: 100%;
 }
-
-.heroD {
-    background: var(--color1);
-}
-
   
-
 .hero .heroG {
     background: var(--color1);
     color: var(--color2);
