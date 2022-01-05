@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #000000;
+    --color2: #ffffff;
+    --color3: #980faa;
+    --color4: #04091a;
+    --color5: #707070;
+    --soft-blue: #8bacda;
+    --cyan: #00fff7;
+    --main-bg: #0d192b;
+    --card-bg: #14253d;
+    --line: #2f415b;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn {
+    border: 0;
+    padding: .5rem 1rem;
+    background: var(--color3);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background: var(--color2);
+    color: var(--color3);
+}
+
+a .btn {
+    color: var(--color2);
+}
+
+.red {
+    color: var(--color3);
+}
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: var(--color1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+/* Accueil */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero .heroG, .hero .heroG {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.hero .heroG {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .heroG div {
+    width: 80%;
+}
+
+.hero .heroG div h1 {
+    font-size: 1.5rem;
+}
+
+.hero .heroG div p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+.discord2 {
+    background: #000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.card{
+    width: 300px;
+    min-height: 20px;
+    height: fit-content;
+    background: var(--card-bg);
+    border-radius: 20px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image--section{
+    height: 60%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /* A little bit of border radius */
+    border-radius: 7px;
+}
+/* Lets hide the image overlay for now */
+
+.image--section img{
+    width: 100%;
+}
+
+
+/* Lets Move over to the text section */
+
+.text--section{
+    color: #fff;
+}
+
+.mainText{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1rem 0;
+    margin-bottom: .5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.mainText:hover{
+    color: var(--cyan);
+}
+
+.subText{
+    font-size: 14px;
+    color: var(--soft-blue);
+    margin-bottom: 1rem;
+}
+
+
+/* The protfolio Section */
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.amount, .days{
+    color: var(--cyan);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .3rem;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.days{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+
+/* Lets get working on the image */
+
+.owner--section{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+    border-top: 1px solid var(--line);
+    padding-top: .5rem;
+}
+
+.owner--section .image{
+    display: flex;
+    align-items: center;
+}
+
+.owner--section .image img{
+    width: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.owner--section .name{
+    color: var(--soft-blue);
+    font-size: 13px;
+}
+
+.owner--section .name span{
+    color: #fff;
+    cursor: pointer;
+}
+
+.owner--section .name span:hover{
+    color: var(--cyan);
+}
+
+/* Lets not forget about the image overlay, guys */
+
+.image-overlay{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00fff75d;
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.image-overlay img{
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.image-overlay:hover{
+    opacity: 1;
+}
+
+
+
+
+.hero .logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero .socials {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.hero .socials ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.hero .socials ul li {
+    margin-left: 1rem;
+    background: var(--color1);
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.hero .socials ul li a {
+    color: var(--color2);
+    transition: color .5s;
+}
+
+.hero .socials ul li a:hover {
+    color: var(--color3);
+}
+
+.hero .socials ul {
+    display: flex;
+}
+
+/* Discord */
+.discord {
+    background: var(--color2);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.discord h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* RoadMap */
+.roadmap {
+    background: var(--color1);
+    padding: 4rem 0;
+    color: var(--color2);
+}
+
+.roadmap h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.roadmap .bloc {
+    background: var(--color4);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: relative;
+    margin-left: 2px;
+}
+
+.roadmap h4 {
+    margin: 1rem 0;
+}
+
+.roadmap p {
+    line-height: 1.5rem;
+}
+
+.roadmap .number {
+    position: absolute;
+    top: -1rem;
+    left: calc(1rem - 1px);
+    background: var(--color3);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap .number.off {
+    background: var(--color2);
+    color: var(--color3);
+}
+
+.roadmap .container {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 3rem;
+    height: 100%;
+    width: 2px;
+    background: var(--color3);
+    top: 30px;
+}
+
+/* Team */
+.team {
+    padding: 4rem 0;
+}
+
+.team h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.team .team__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team .member {
+    width: 31%;
+    text-align: center;
+}
+
+.team .member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .member h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.team .member .job {
+    color: var(--color5);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.team__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer */
+footer {
+    background: var(--color1);
+    color: var(--color2);
+    padding: 1rem 0;
+}
+
+.footer__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__flex ul {
+    list-style: none;
+}
+
+.footer__flex ul li a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media all and (max-width: 767px) {
+    .hero .heroD {
+        display: none;
+    }
+    .discord2 {
+        text-align: center;
+    }
+
+    .hero .heroD, .hero .heroG {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero .heroG div h1 {
+        font-size: 2rem;
+    }
+
+    .team__flex {
+        flex-direction: column;
+    }
+
+    .team__flex .member {
+        margin-bottom: 3rem;
+    }
+
+    .team__flex .member:last-child {
+        margin-bottom: 0;
+    }
+
+    .team .member {
+        width: 100%;
+    }
+}
